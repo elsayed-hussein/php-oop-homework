@@ -45,10 +45,6 @@ for ($i = 0; $i < $arr_num; $i++) {
 
 ```
 
-## number of items
-
-```php
-$arr_num = 6;
 
 ```
 
