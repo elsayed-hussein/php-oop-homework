@@ -51,7 +51,7 @@ for ($i = 0; $i < $arr_num; $i++) {
 ## put data on the page
 
 ```php
-0000l
+
  foreach ($f_arr as $arr) {
                 echo "  <div class=\"card col-5 p-3 m-3\" >
                     <div class=\"card-body\">
