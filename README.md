@@ -75,3 +75,19 @@ for ($i = 0; $i < $arr_num; $i++) {
             };
 
 ```
+
+## Get Card Number from Usre
+
+```php
+            <form action="./index.php" method="POST">
+                <div class="row d-flex justify-content-start align-items-center">
+                    <label for="cardNum" class="col-4 col-form-label navbar-brand">Card Number(1-12)</label>
+                    <div class="col-1 ms-2 me-5">
+                        <input type="number" id="cardNum" name="quantity" min="1" max="12" value="<?php echo "$arr_num"; ?>">
+                    </div>
+                    <input class="btn btn-primary col-2 ms-4" type="submit" value="Go">
+
+                </div>
+            </form>
+
+```
