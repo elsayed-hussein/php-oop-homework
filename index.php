@@ -4,7 +4,12 @@ require_once 'vendor/autoload.php';
 
 $faker = Faker\Factory::create();
 $f_arr = [];
-$arr_num = 6;
+if (!empty($_POST)) {
+
+    $arr_num =  $_POST['quantity'];
+} else {
+    $arr_num = 6;
+}
 
 for ($i = 0; $i < $arr_num; $i++) {
     $arr =
@@ -50,7 +55,7 @@ for ($i = 0; $i < $arr_num; $i++) {
     </nav>
     <!-- nav bar end -->
     <!-- main section start  -->
-    <section class=" container ">
+    <section class=" container " style="min-height:85vh">
         <div class="row d-flex justify-content-center">
             <?php
             foreach ($f_arr as $arr) {
@@ -82,8 +87,18 @@ for ($i = 0; $i < $arr_num; $i++) {
     <!-- main section end  -->
     <!-- footer start -->
     <footer class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <p class="navbar-brand ms-auto me-auto">
+        <div class="container-fluid ">
+            <form action="./index.php" method="POST">
+                <div class="row d-flex justify-content-start align-items-center">
+                    <label for="cardNum" class="col-4 col-form-label navbar-brand">Card Number(1-12)</label>
+                    <div class="col-1 ms-2 me-5">
+                        <input type="number" id="cardNum" name="quantity" min="1" max="12" value="<?php echo "$arr_num"; ?>">
+                    </div>
+                    <input class="btn btn-primary col-2 ms-4" type="submit" value="Go">
+
+                </div>
+            </form>
+            <p class="navbar-brand ms-auto me-auto ">
                 <b>Made by :</b> Elsayed Hussein
             </p>
             <a class="btn btn-primary" href="https://github.com/elsayed-hussein/php-oop-homework"><i class="fa-brands fa-github me-1"></i>Git Hub</a>
