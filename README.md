@@ -1,5 +1,9 @@
 # php-oop-homework
 
+## Demo
+
+[Live Demo !](https://faker-php-test.herokuapp.com/index.php)
+
 ## use Faker php
 
 ```php
@@ -12,8 +16,6 @@ $faker = Faker\Factory::create();
 ## generate random data to array
 
 ```php
-$f_arr = [];
-$arr_num = 6;
 
 for ($i = 0; $i < $arr_num; $i++) {
     $arr =
