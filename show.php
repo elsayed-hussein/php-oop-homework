@@ -28,7 +28,7 @@
      </nav>
      <!-- nav bar end -->
      <!-- main section start  -->
-     <section class=" container ">
+     <section class=" container " style="height:85vh">
          <div class="row d-flex justify-content-center">
              <?php
                 echo "  <div class=\"card col-11 p-3 m-3\" >
@@ -50,7 +50,15 @@
          </div>
      </section>
      <!-- main section end  -->
-
+     <!-- footer start -->
+     <footer class="navbar navbar-dark bg-dark">
+         <div class="container-fluid">
+             <a class="navbar-brand ms-auto me-auto" href="#">
+                 Made by : Elsayed Hussein
+             </a>
+         </div>
+     </footer>
+     <!-- footer end -->
 
      <!-- bootstrap js -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

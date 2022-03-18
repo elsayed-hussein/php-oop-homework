@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
-// use the factory to create a Faker\Generator instance
+
 $faker = Faker\Factory::create();
 $f_arr = [];
 $arr_num = 6;
@@ -80,7 +80,15 @@ for ($i = 0; $i < $arr_num; $i++) {
         </div>
     </section>
     <!-- main section end  -->
-
+    <!-- footer start -->
+    <footer class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-auto me-auto" href="#">
+                Made by : Elsayed Hussein
+            </a>
+        </div>
+    </footer>
+    <!-- footer end -->
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
