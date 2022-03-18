@@ -13,6 +13,18 @@ $faker = Faker\Factory::create();
 
 ```
 
+## card numder from usre default 6
+
+```php
+if (!empty($_POST)) {
+
+    $arr_num =  $_POST['quantity'];
+} else {
+    $arr_num = 6;
+}
+
+```
+
 ## generate random data to array
 
 ```php
