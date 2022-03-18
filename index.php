@@ -83,9 +83,11 @@ for ($i = 0; $i < $arr_num; $i++) {
     <!-- footer start -->
     <footer class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand ms-auto me-auto" href="#">
-                Made by : Elsayed Hussein
-            </a>
+            <p class="navbar-brand ms-auto me-auto">
+                <b>Made by :</b> Elsayed Hussein
+            </p>
+            <a class="btn btn-primary" href="https://github.com/elsayed-hussein/php-oop-homework"><i class="fa-brands fa-github me-1"></i>Git Hub</a>
+
         </div>
     </footer>
     <!-- footer end -->
